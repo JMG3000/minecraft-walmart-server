@@ -1,6 +1,4 @@
-# 🎮 Minecraft Server Connection Guide
-
-Follow these steps to connect to our private Minecraft server using the **zrok** secure tunnel on a Windows system.
+## 🎮 Windows
 
 ## Step 1: Open PowerShell
 Press the **Windows Key**, type `PowerShell`, and hit **Enter**.
