@@ -17,7 +17,10 @@ mkdir C:\MinecraftTunnel
 cd C:\MinecraftTunnel
 
 # 3. Download the zrok executable
-curl.exe -L "[https://github.com/openziti/zrok/releases/download/v2.0.1/zrok_windows_amd64.tar.gz](https://github.com/openziti/zrok/releases/download/v2.0.1/zrok_windows_amd64.tar.gz)" -o zrok.tar.gz
+
+[https://netfoundry.io/docs/zrok/how-tos/install/](Choose your platform here. We are not tested on Ios, Mac, or Linux as of now!)
+
+curl.exe -L "https://github.com/openziti/zrok/releases/download/v2.0.1/zrok_2.0.1_windows_amd64.tar.gz" -o zrok.tar.gz
 
 # 4. Extract the executable
 tar.exe -xf zrok.tar.gz
