@@ -15,10 +15,14 @@ mkdir C:\MinecraftTunnel
 cd C:\MinecraftTunnel
 
 # 3. Download the zrok executable
-curl.exe -L "[https://github.com/openziti/zrok/releases/download/v2.0.1/zrok_windows_amd64.tar.gz](https://github.com/openziti/zrok/releases/download/v2.0.1/zrok_windows_amd64.tar.gz)" -o zrok.tar.gz
+
+[Choose your platform](https://netfoundry.io/docs/zrok/how-tos/install)
+here We are not tested on Ios, Mac, or Linux as of now!
+
+curl.exe -L "https://github.com/openziti/zrok/releases/download/v2.0.1/zrok_2.0.1_windows_amd64.tar.gz" -o zrok.tar.gz
 
 # 4. Extract the executable
-tar.exe -xf zrok.tar.gz
+tar.exe -xf zrok2.tar.gz
 ```
 
 ## Step 3: Authenticate & Open the Tunnel
@@ -26,12 +30,12 @@ Once the files are extracted, you need to authenticate your device and open the 
 
 **1. Authenticate your device:**
 ```powershell
-.\zrok.exe enable [TEXT ME FOR THE ACCOUNT TOKEN]
+.\zrok2.exe enable [TEXT ME FOR THE ACCOUNT TOKEN]
 ```
 
 **2. Start the tunnel:**
 ```powershell
-.\zrok.exe access private [TEXT ME FOR THE SHARE TOKEN] --bind 127.0.0.1:25565
+.\zrok2.exe access private [TEXT ME FOR THE SHARE TOKEN] --bind 127.0.0.1:25565
 ```
 *(Keep this PowerShell window open and running in the background while you play!)*
 
